@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../assets/taylor.jpg) no-repeat center center/cover;
+    font-family: Quicksand, sans-serif;
+    z-index: 0;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+header {
+    padding: 2em .2em;
+    position: fixed;
+    background: rgba(49, 49, 49, 0.096);
+    width: 100%;
+    z-index: 100;
+}
+
+header h2 {
+    float: left;
+    margin-top: .5em;
+    margin-left: 1em;
+    font-size: 1.4em;
+    color: rgba(168, 53, 0, 0.705);
+}
+
+.social-media {
+    padding: .8em 0;
+    float: right;
+}
+
+.social-media a {
+    text-decoration: none;
+    margin: 0 0.5em;
+}
+
+.social-media a i {
+    transform: scale(1.2);
+    padding: .8em;
+    width: 2.6em;
+    height: 2.6em;
+    color: rgba(168, 53, 0, 0.705);
+    background: whitesmoke;
+    border-radius: 15%;
+}
+
+.social-media a i:hover {
+    color: whitesmoke;
+    background: rgba(168, 53, 0, 0.705);
+}
+
+.container {
+    text-align: center;
+    padding: 4em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-title {
+    margin-top: 1.4em;
+    margin: 1em 0;
+}
+
+.container-description {
+    padding: 1.4em;
+    background: rgba(168, 53, 0, 0.705);
+    border-radius: .52em;
+    margin: 1em 0;
+}
+
+.container #start {
+    min-width: 8.5em;
+    margin-top: 1.6em;
+    padding: .75em;
+    font-size: 1.2em;
+    background: rgba(168, 53, 0, 0.705);
+    z-index: 95;
+    color: whitesmoke;
+    border-radius: .52em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container #start:hover {
+    background: whitesmoke;
+    color: rgba(168, 53, 0, 0.705);
+}
+
+footer {
+    background-color: rgba(65, 22, 2, 0.63);
+    color: whitesmoke;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    padding: 2em;
+}
+
+footer p, a, span {
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer span {
+    padding-left: .75em;
+}
