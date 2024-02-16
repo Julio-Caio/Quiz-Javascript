@@ -3,7 +3,7 @@ let btnStart = document.getElementById("start");
 let questionHeader = document.getElementById("quiz-header");
 let questionOptions = document.getElementById("quiz-options");
 
-let kanyeImage = `<img src="/assets/kanye.webp" alt="Kanye West">`;
+let kanyeImage = `<img src="../assets/kanye.webp" alt="Kanye West">`;
 
 let currentQuestion = 1;
 let currentScore = 0;
@@ -153,6 +153,6 @@ function renderBanner() {
 }
 
 function playAudio() {
-    let audio = new Audio('/assets/kanye.mpeg')
+    let audio = new Audio('../assets/kanye.mpeg')
     audio.play();
 }
