@@ -3,7 +3,7 @@ let btnStart = document.getElementById("start");
 let questionHeader = document.getElementById("quiz-header");
 let questionOptions = document.getElementById("quiz-options");
 
-let kanyeImage = `<img src="/assets/kanye.webp" alt="Kanye West">`;
+let kanyeImage = `<img src="https://uploads.metropoles.com/wp-content/uploads/2019/10/25154055/GettyImages-983141804.jpg" alt="Kanye West">`;
 
 let currentQuestion = 1;
 let currentScore = 0;
