@@ -3,7 +3,7 @@ let btnStart = document.getElementById("start");
 let questionHeader = document.getElementById("quiz-header");
 let questionOptions = document.getElementById("quiz-options");
 
-let kanyeImage = `<img src="assets/kanye.webp" alt="Kanye West">`;
+let kanyeImage = `<img src="/assets/kanye.webp" alt="Kanye West">`;
 
 let currentQuestion = 1;
 let currentScore = 0;
@@ -98,7 +98,7 @@ function checkAnswer(button) {
         changeColor(button, "#ef4444");
     }
 
-    setTimeout(renderNextQuestion, 600)
+    setTimeout(renderNextQuestion, 1000)
     currentQuestion++;
     currentQuestionIndex++;
 }
@@ -144,7 +144,15 @@ function renderBanner() {
     modalBackdrop.appendChild(modal);
     document.body.appendChild(modalBackdrop);
 
+    // tocar som quando o modal aparecer
+    playAudio();
+
     modalCloseButton.addEventListener("click", function() {
         modalBackdrop.style.display = "none";
     });
+}
+
+function playAudio() {
+    let audio = new Audio('/assets/kanye.mpeg')
+    audio.play();
 }
